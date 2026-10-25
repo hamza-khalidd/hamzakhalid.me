@@ -114,52 +114,46 @@
       <section class="section worth" id="reading">
         <div class="worth-grid">
           <div class="worth-list">
-            <p class="kicker">Worth reading</p>
-            <h2>Four ideas, one picture each.</h2>
+            <p class="kicker">My notebook</p>
+            <h2>Things I had to write down.</h2>
             <div class="worth-items" role="tablist" aria-label="Topics">
-              <button class="worth-item" type="button" role="tab" id="tab-loop" aria-selected="true" aria-controls="panel-loop" data-topic="loop">
-                <strong>Agentic loop</strong>
-                <span>An agent sets a goal, acts, checks what happened, and goes again until the job is done.</span>
-              </button>
-              <button class="worth-item" type="button" role="tab" id="tab-orch" aria-selected="false" aria-controls="panel-orch" data-topic="orch">
-                <strong>Orchestration</strong>
-                <span>One coordinator splits the work across specialist agents, then stitches the results together.</span>
-              </button>
-              <button class="worth-item" type="button" role="tab" id="tab-sql" aria-selected="false" aria-controls="panel-sql" data-topic="sql">
-                <strong>Text to SQL</strong>
-                <span>A plain question becomes a database query, runs on the tables, and comes back as rows.</span>
-              </button>
-              <button class="worth-item" type="button" role="tab" id="tab-llm" aria-selected="false" aria-controls="panel-llm" data-topic="llm">
-                <strong>How an LLM writes</strong>
-                <span>The model does not fetch a finished sentence. It predicts the next token from the ones already there.</span>
-              </button>
+              <div class="worth-entry">
+                <button class="worth-item" type="button" role="tab" id="tab-loop" aria-selected="true" aria-controls="panel-loop" data-topic="loop">
+                  <strong>Agentic loop</strong>
+                  <span>An agent sets a goal, acts, checks what happened, and goes again until the job is done.</span>
+                </button>
+                <a class="worth-more" href="notes/agentic-loop.html">read more <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+              </div>
+              <div class="worth-entry">
+                <button class="worth-item" type="button" role="tab" id="tab-orch" aria-selected="false" aria-controls="panel-orch" data-topic="orch">
+                  <strong>Orchestration</strong>
+                  <span>One coordinator splits the work across specialist agents, then stitches the results together.</span>
+                </button>
+                <a class="worth-more" href="notes/orchestration.html">read more <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+              </div>
+              <div class="worth-entry">
+                <button class="worth-item" type="button" role="tab" id="tab-sql" aria-selected="false" aria-controls="panel-sql" data-topic="sql">
+                  <strong>Text to SQL</strong>
+                  <span>A plain question becomes a database query, runs on the tables, and comes back as rows.</span>
+                </button>
+                <a class="worth-more" href="notes/text-to-sql.html">read more <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+              </div>
+              <div class="worth-entry">
+                <button class="worth-item" type="button" role="tab" id="tab-llm" aria-selected="false" aria-controls="panel-llm" data-topic="llm">
+                  <strong>How an LLM writes</strong>
+                  <span>The model does not fetch a finished sentence. It predicts the next token from the ones already there.</span>
+                </button>
+                <a class="worth-more" href="notes/how-an-llm-writes.html">read more <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+              </div>
             </div>
+            <a class="worth-notes" href="notebook.html">read more notes <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
           </div>
 
           <div class="worth-stage">
-            <div class="motion-card">
-              <div class="motion-orbit">
-                <div class="orbit-ring"></div>
-                <span class="orbit-dot" id="orbit-dot"></span>
-                <button class="orbit-label pos-0" type="button" data-step="0">Goal</button>
-                <button class="orbit-label pos-1" type="button" data-step="1">Plan</button>
-                <button class="orbit-label pos-2" type="button" data-step="2">Act</button>
-                <button class="orbit-label pos-3" type="button" data-step="3">Observe</button>
-              </div>
-              <div class="motion-side">
-                <div class="dial">
-                  <strong id="dial-value">01</strong>
-                  <span id="dial-caption">goal</span>
-                </div>
-                <div class="meter">
-                  <span id="meter-a-name">Progress</span>
-                  <span class="track"><i id="bar-a"></i></span>
-                </div>
-                <div class="meter">
-                  <span id="meter-b-name">Signal</span>
-                  <span class="track track-soft"><i id="bar-b"></i><b class="meter-dot"></b></span>
-                </div>
-              </div>
+            <div class="viz" id="viz" aria-live="polite"></div>
+            <div class="viz-foot">
+              <div class="viz-phases" id="viz-phases"></div>
+              <span class="viz-round" id="viz-round"></span>
             </div>
             <p class="motion-caption" id="motion-caption"></p>
           </div>
@@ -193,6 +187,7 @@
       </footer>
     </section>
     <script src="field.js"></script>
+    <script src="viz.js"></script>
     <script src="learn.js"></script>
   </body>
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My notebook · Hamza Khalid</title>
+    <meta name="description" content="Short notes from Hamza Khalid on agents, retrieval, models and data, each with an explainer animation." />
+    <link rel="canonical" href="https://hamzakhalid.me/notebook.html" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="google-sans-body">
+    <header class="nav">
+      <a class="brand" href="index.html">
+        <span class="mark" aria-hidden="true">HK</span>
+        hamzakhalid
+      </a>
+      <div class="nav-actions">
+        <a class="nav-icon" href="https://github.com/hamza-khalidd" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a class="nav-icon" href="https://www.linkedin.com/in/hamzaakhalid/" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+        </a>
+        <a class="btn btn-orange" href="mailto:hamzakhalidd@outlook.com">Get in touch</a>
+      </div>
+    </header>
+
+    <main class="blogs-page">
+      <header class="blogs-intro">
+        <p class="kicker">My notebook</p>
+        <h1>Things I had to write down.</h1>
+        <p>
+          Short notes on agents, retrieval, models and data. Each one comes
+          with a picture that moves, so the idea is easier to see than to read.
+        </p>
+      </header>
+
+      <div class="nb-list">
+        <a class="nb-item" href="notes/agentic-loop.html">
+          <span class="nb-num">01</span>
+          <span class="nb-main">
+            <span class="nb-tag">Agents</span>
+            <strong>Agentic loop</strong>
+            <span class="nb-sum">An agent is a loop with a stop. It holds a goal, takes one step, checks what came back, and goes again until the goal is met.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/orchestration.html">
+          <span class="nb-num">02</span>
+          <span class="nb-main">
+            <span class="nb-tag">Agents</span>
+            <strong>Orchestration</strong>
+            <span class="nb-sum">One coordinator holds the brief and hands pieces to specialist agents. They work in parallel, report back, and the coordinator stitches one answer.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/text-to-sql.html">
+          <span class="nb-num">03</span>
+          <span class="nb-main">
+            <span class="nb-tag">Data</span>
+            <strong>Text to SQL</strong>
+            <span class="nb-sum">A plain question becomes a query against a real table. The database runs it, and the answer is rows you can check, not a guess.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/how-an-llm-writes.html">
+          <span class="nb-num">04</span>
+          <span class="nb-main">
+            <span class="nb-tag">Models</span>
+            <strong>How an LLM writes</strong>
+            <span class="nb-sum">The model never fetches a finished sentence. It scores every possible next token, picks one, appends it, and starts again.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/embeddings.html">
+          <span class="nb-num">05</span>
+          <span class="nb-main">
+            <span class="nb-tag">Search</span>
+            <strong>Embeddings</strong>
+            <span class="nb-sum">Words and passages become points in space. Things used in similar ways land close together, so distance can stand in for meaning.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/retrieval.html">
+          <span class="nb-num">06</span>
+          <span class="nb-main">
+            <span class="nb-tag">Search</span>
+            <strong>Retrieval (RAG)</strong>
+            <span class="nb-sum">Before answering, the system searches your documents, keeps the best few chunks, and puts them in the prompt so the model answers from them.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/chunking.html">
+          <span class="nb-num">07</span>
+          <span class="nb-main">
+            <span class="nb-tag">Search</span>
+            <strong>Chunking</strong>
+            <span class="nb-sum">Long documents are cut into overlapping pieces before they are embedded. The cut decides what can be found later.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/tool-calling.html">
+          <span class="nb-num">08</span>
+          <span class="nb-main">
+            <span class="nb-tag">Agents</span>
+            <strong>Tool calling</strong>
+            <span class="nb-sum">The model does not run anything. It writes a structured request, your code executes it, and the result comes back for the model to explain.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/context-window.html">
+          <span class="nb-num">09</span>
+          <span class="nb-main">
+            <span class="nb-tag">Models</span>
+            <strong>Context window</strong>
+            <span class="nb-sum">A model reads through a fixed-size window. When new tokens arrive, the oldest fall out, and anything outside the window is simply not there.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/temperature.html">
+          <span class="nb-num">10</span>
+          <span class="nb-main">
+            <span class="nb-tag">Models</span>
+            <strong>Temperature</strong>
+            <span class="nb-sum">One setting reshapes the model's next-token scores. Low temperature makes it repeat its top pick; high temperature spreads the choices out.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/evals.html">
+          <span class="nb-num">11</span>
+          <span class="nb-main">
+            <span class="nb-tag">Quality</span>
+            <strong>Evals</strong>
+            <span class="nb-sum">A fixed set of questions with known answers, run every time something changes. It turns 'seems better' into a score, and catches what got worse.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+        <a class="nb-item" href="notes/guardrails.html">
+          <span class="nb-num">12</span>
+          <span class="nb-main">
+            <span class="nb-tag">Quality</span>
+            <strong>Guardrails</strong>
+            <span class="nb-sum">Checks before and after the model. One decides what the model may see; the other decides what a person may read.</span>
+          </span>
+          <span class="nb-go">read <svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></span>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer note-footer">
+      <p>© 2026 Hamza Khalid</p>
+      <p>
+        <a href="index.html">Home</a>
+        <a href="notebook.html">Notebook</a>
+        <a href="https://github.com/hamza-khalidd">GitHub</a>
+        <a href="https://www.linkedin.com/in/hamzaakhalid/">LinkedIn</a>
+      </p>
+    </footer>
+
+  </body>
+</html>
